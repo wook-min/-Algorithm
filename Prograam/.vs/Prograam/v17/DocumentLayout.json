@@ -1,0 +1,67 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\com\\Desktop\\-Algorithm\\Prograam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E241F97A-373D-458A-96DD-5BF32C1E1DB1}|..\\Class 001th (Asymptotic Notation)\\Class 001th (Asymptotic Notation).vcxproj|C:\\Users\\com\\Desktop\\-Algorithm\\Class 001th (Asymptotic Notation)\\Class 001th (Asymptotic Notation).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3CE5F45-A5CA-4099-8503-EEC3E2442DF0}|..\\Class 002th (Brute Force)\\Class 002th (Brute Force).vcxproj|C:\\Users\\com\\Desktop\\-Algorithm\\Class 002th (Brute Force)\\Class 002th (Brute Force).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C1F8473-3F75-42CB-8861-CFBA33685356}|Prograam.vcxproj|C:\\Users\\com\\Desktop\\-Algorithm\\Prograam\\Prograam.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8C1F8473-3F75-42CB-8861-CFBA33685356}|Prograam.vcxproj|solutionrelative:Prograam.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class 001th (Asymptotic Notation).cpp",
+              "DocumentMoniker": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 001th (Asymptotic Notation)\\Class 001th (Asymptotic Notation).cpp",
+              "RelativeDocumentMoniker": "..\\Class 001th (Asymptotic Notation)\\Class 001th (Asymptotic Notation).cpp",
+              "ToolTip": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 001th (Asymptotic Notation)\\Class 001th (Asymptotic Notation).cpp",
+              "RelativeToolTip": "..\\Class 001th (Asymptotic Notation)\\Class 001th (Asymptotic Notation).cpp",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-12T12:39:40.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class 002th (Brute Force).cpp",
+              "DocumentMoniker": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 002th (Brute Force)\\Class 002th (Brute Force).cpp",
+              "RelativeDocumentMoniker": "..\\Class 002th (Brute Force)\\Class 002th (Brute Force).cpp",
+              "ToolTip": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 002th (Brute Force)\\Class 002th (Brute Force).cpp",
+              "RelativeToolTip": "..\\Class 002th (Brute Force)\\Class 002th (Brute Force).cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-12T12:39:36.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Prograam.cpp",
+              "DocumentMoniker": "C:\\Users\\com\\Desktop\\-Algorithm\\Prograam\\Prograam.cpp",
+              "RelativeDocumentMoniker": "Prograam.cpp",
+              "ToolTip": "C:\\Users\\com\\Desktop\\-Algorithm\\Prograam\\Prograam.cpp",
+              "RelativeToolTip": "Prograam.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-12T11:12:05.113Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
