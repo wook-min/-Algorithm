@@ -3,10 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\com\\Desktop\\-Algorithm\\Prograam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E241F97A-373D-458A-96DD-5BF32C1E1DB1}|..\\Class 001th (Asymptotic Notation)\\Class 001th (Asymptotic Notation).vcxproj|C:\\Users\\com\\Desktop\\-Algorithm\\Class 001th (Asymptotic Notation)\\Class 001th (Asymptotic Notation).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3CE5F45-A5CA-4099-8503-EEC3E2442DF0}|..\\Class 002th (Brute Force)\\Class 002th (Brute Force).vcxproj|C:\\Users\\com\\Desktop\\-Algorithm\\Class 002th (Brute Force)\\Class 002th (Brute Force).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AE99394C-6D5E-4018-B5BD-E48D7AC2EC45}|..\\Class 003th (Bubble Sort)\\Class 003th (Bubble Sort).vcxproj|C:\\Users\\com\\Desktop\\-Algorithm\\Class 003th (Bubble Sort)\\Class 003th (Bubble Sort).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C1F8473-3F75-42CB-8861-CFBA33685356}|Prograam.vcxproj|C:\\Users\\com\\Desktop\\-Algorithm\\Prograam\\Prograam.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -25,39 +22,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Class 001th (Asymptotic Notation).cpp",
-              "DocumentMoniker": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 001th (Asymptotic Notation)\\Class 001th (Asymptotic Notation).cpp",
-              "RelativeDocumentMoniker": "..\\Class 001th (Asymptotic Notation)\\Class 001th (Asymptotic Notation).cpp",
-              "ToolTip": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 001th (Asymptotic Notation)\\Class 001th (Asymptotic Notation).cpp",
-              "RelativeToolTip": "..\\Class 001th (Asymptotic Notation)\\Class 001th (Asymptotic Notation).cpp",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Class 003th (Bubble Sort).cpp",
+              "DocumentMoniker": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 003th (Bubble Sort)\\Class 003th (Bubble Sort).cpp",
+              "RelativeDocumentMoniker": "..\\Class 003th (Bubble Sort)\\Class 003th (Bubble Sort).cpp",
+              "ToolTip": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 003th (Bubble Sort)\\Class 003th (Bubble Sort).cpp",
+              "RelativeToolTip": "..\\Class 003th (Bubble Sort)\\Class 003th (Bubble Sort).cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-12T12:39:40.213Z",
+              "WhenOpened": "2025-08-13T12:38:14.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Class 002th (Brute Force).cpp",
-              "DocumentMoniker": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 002th (Brute Force)\\Class 002th (Brute Force).cpp",
-              "RelativeDocumentMoniker": "..\\Class 002th (Brute Force)\\Class 002th (Brute Force).cpp",
-              "ToolTip": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 002th (Brute Force)\\Class 002th (Brute Force).cpp",
-              "RelativeToolTip": "..\\Class 002th (Brute Force)\\Class 002th (Brute Force).cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-12T12:39:36.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Prograam.cpp",
               "DocumentMoniker": "C:\\Users\\com\\Desktop\\-Algorithm\\Prograam\\Prograam.cpp",
               "RelativeDocumentMoniker": "Prograam.cpp",
               "ToolTip": "C:\\Users\\com\\Desktop\\-Algorithm\\Prograam\\Prograam.cpp",
               "RelativeToolTip": "Prograam.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-12T11:12:05.113Z"
+              "WhenOpened": "2025-08-12T11:12:05.113Z",
+              "EditorCaption": ""
             }
           ]
         }
