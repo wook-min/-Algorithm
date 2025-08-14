@@ -1,2 +1,3 @@
 ﻿  Prograam.cpp
+C:\Users\com\Desktop\-Algorithm\Prograam\Prograam.cpp(21,1): warning C4715: 'Euclidean_Algorithm': 모든 제어 경로에서 값을 반환하지는 않습니다.
   Prograam.vcxproj -> C:\Users\com\Desktop\-Algorithm\Prograam\x64\Debug\Prograam.exe
