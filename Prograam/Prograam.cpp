@@ -1,55 +1,80 @@
 ﻿#include <iostream>
+#include <vector>
 
 using namespace std;
 
-// 1. 두 개의 자연수 x, y가 있을 때 x와 y를 나눈 나머지를  r이라고 합니다
-// 2. r이 0이라면, x와 y의 최대공약수가 y가 됩니다.
-// 3. r이 0이 아니라면, x와 y의 최대 공약수는 y와 r의 최대 공약수와 같기 때문에
-//		x에는 y, 그리고 y에는 r을 대입한 후 1번으로 돌아가면 됩니다.
-int Euclidean_Algorithm(int x, int y)
+void Sieve_Of_Eratosthenes(int n)
 {
-	int r = x % y;
-	
-	if (r == 0)
-	{
-		return y;
-	}
-	else
-	{
-		Euclidean_Algorithm(y, r);
-	}
-}
+	int* prime = new int[n + 1];
 
+	for (int i = 0; i <= n; i++)
+	{
+		prime[i] = i;
+	}
+
+	prime[0] = 0;
+	prime[1] = 0;
+
+	// 제곱근까지만 반복
+	for (int i = 2; i * i <= n; i++)
+	{
+		if (prime[i] != 0)
+		{
+			// 배수만큼만 반복, 시작도 i제곱부터(그전 숫자들은 모두 판별이 완료되었으므로)
+			for (int j = i * i; j <= n; j += i)
+			{
+				prime[j] = 0;
+			}
+		}
+	}
+
+	for (int i = 0; i <= n; i++)
+	{
+		if (prime[i] != 0)
+		{
+			cout << prime[i] << "  ";
+		}
+	}
+
+	delete[] prime;
+	
+}
 
 
 int main()
 {
-#pragma region 유클리드 호제법
-	// 2개의 자연수 또는 정식의 최대 공약수를 구하는 방식으로
-	// 두 수가 서로 상대방 수를 나누어서 원하는 수를 얻어내는 알고리즘입니다.
+#pragma region 에라토스테네스의 체
+	// 소수 : 1과 자기자신외에 나누어 떨어지지 않는 수
 
-#pragma region 단순한 연산으로 최대 공약수 해결(시간 복잡도 O(n))
-	//	int x = 109;
-	//	int y = 72;
+	// n을 입력했을 때 2 ~ n까지의 소수를 모두 출력하는 알고리즘
+	// 시간복잡도 : O(n log log N) -- O(n)과 유사한 시간 복잡도
+
+#pragma region 브루트 포스 방식으로 소수 판별
+	//	int j = 0;
+	//	int n = 0;
 	//	
-	//	int divisor = 0;
+	//	std::cin >> n;
 	//	
-	//	// min => (i <= x && i <= y)
-	//	for (int i = 1; i <= min(x, y); i++)
+	//	for (int i = 2; i < n; i++)
 	//	{
-	//		if (x % i == 0 && y % i == 0)
+	//		for (j = 2; j <= n; j++)
 	//		{
-	//			divisor = i;
+	//			if (i % j == 0)
+	//			{
+	//				break;
+	//			}
+	//		}
+	//	
+	//		if (i == j)
+	//		{
+	//			cout << i << " ";
 	//		}
 	//	}
-
-	// cout << "최대 공약수 : " << divisor << endl;
 #pragma endregion
 
-	cout << "최대 공약수 : " << Euclidean_Algorithm(48, 24) << endl;
+	Sieve_Of_Eratosthenes(100);
 
-
-
+	
 #pragma endregion
 
 

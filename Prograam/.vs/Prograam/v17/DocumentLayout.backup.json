@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{8C1F8473-3F75-42CB-8861-CFBA33685356}|Prograam.vcxproj|solutionrelative:Prograam.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EC04463-5E41-43F1-A31A-335B998027EB}|..\\Class 005th (Insert Sort)\\Class 005th (Insert Sort).vcxproj|C:\\Users\\com\\Desktop\\-Algorithm\\Class 005th (Insert Sort)\\Class 005th (Insert Sort).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C2E480E9-1679-4886-84BD-244815BA687A}|..\\Class 006th (Euclidean Algorithm)\\Class 006th (Euclidean Algorithm).vcxproj|C:\\Users\\com\\Desktop\\-Algorithm\\Class 006th (Euclidean Algorithm)\\Class 006th (Euclidean Algorithm).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,14 +22,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Class 005th (Insert Sort).cpp",
-              "DocumentMoniker": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 005th (Insert Sort)\\Class 005th (Insert Sort).cpp",
-              "RelativeDocumentMoniker": "..\\Class 005th (Insert Sort)\\Class 005th (Insert Sort).cpp",
-              "ToolTip": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 005th (Insert Sort)\\Class 005th (Insert Sort).cpp",
-              "RelativeToolTip": "..\\Class 005th (Insert Sort)\\Class 005th (Insert Sort).cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBMAAAAQAAAAAAAAAA==",
+              "Title": "Class 006th (Euclidean Algorithm).cpp",
+              "DocumentMoniker": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 006th (Euclidean Algorithm)\\Class 006th (Euclidean Algorithm).cpp",
+              "RelativeDocumentMoniker": "..\\Class 006th (Euclidean Algorithm)\\Class 006th (Euclidean Algorithm).cpp",
+              "ToolTip": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 006th (Euclidean Algorithm)\\Class 006th (Euclidean Algorithm).cpp",
+              "RelativeToolTip": "..\\Class 006th (Euclidean Algorithm)\\Class 006th (Euclidean Algorithm).cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAqwEEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-14T11:46:25.224Z",
+              "WhenOpened": "2025-08-18T11:11:12.273Z",
               "EditorCaption": ""
             },
             {
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Prograam.cpp",
               "ToolTip": "C:\\Users\\com\\Desktop\\-Algorithm\\Prograam\\Prograam.cpp",
               "RelativeToolTip": "Prograam.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-12T11:12:05.113Z",
               "EditorCaption": ""
