@@ -5,9 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8C1F8473-3F75-42CB-8861-CFBA33685356}|Prograam.vcxproj|C:\\Users\\com\\Desktop\\-Algorithm\\Prograam\\Prograam.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8C1F8473-3F75-42CB-8861-CFBA33685356}|Prograam.vcxproj|solutionrelative:Prograam.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2E480E9-1679-4886-84BD-244815BA687A}|..\\Class 006th (Euclidean Algorithm)\\Class 006th (Euclidean Algorithm).vcxproj|C:\\Users\\com\\Desktop\\-Algorithm\\Class 006th (Euclidean Algorithm)\\Class 006th (Euclidean Algorithm).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,21 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Class 006th (Euclidean Algorithm).cpp",
-              "DocumentMoniker": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 006th (Euclidean Algorithm)\\Class 006th (Euclidean Algorithm).cpp",
-              "RelativeDocumentMoniker": "..\\Class 006th (Euclidean Algorithm)\\Class 006th (Euclidean Algorithm).cpp",
-              "ToolTip": "C:\\Users\\com\\Desktop\\-Algorithm\\Class 006th (Euclidean Algorithm)\\Class 006th (Euclidean Algorithm).cpp",
-              "RelativeToolTip": "..\\Class 006th (Euclidean Algorithm)\\Class 006th (Euclidean Algorithm).cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAAAqwEEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-18T11:11:12.273Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,7 +24,7 @@
               "RelativeDocumentMoniker": "Prograam.cpp",
               "ToolTip": "C:\\Users\\com\\Desktop\\-Algorithm\\Prograam\\Prograam.cpp",
               "RelativeToolTip": "Prograam.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-12T11:12:05.113Z",
               "EditorCaption": ""
