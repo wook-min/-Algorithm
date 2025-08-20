@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	int x = 30;
+	float x = 45;
 
 
 
