@@ -1,109 +1,51 @@
 ﻿#include <iostream>
+#include <vector>
 
 using namespace std;
 
-// 재귀로 돌아가 시간복잡도가 매우 많이 걸리는 함수 >> 동적 계획법으로 해결
-// 시간복잡도 : O(2^n)
-int fibonacci(int n)
+class Graph
 {
-	// f(n) = f(n - 1) + f(n - 2)
-
-	// n == 1 , 2 일때는 1
-
-	if (n <= 0)
+private:
+	vector<bool> visited;
+	vector<vector<char>> adjacencyList;
+public:
+	Graph(int size)
 	{
-		return 0;
-	}
-	else if (n <= 2)
-	{
-		return 1;
-	}
-	else
-	{
-		return fibonacci(n - 1) + fibonacci(n - 2);
-	}
-}
-
-int fibonacci(int n, int list[])
-{
-	if (n <= 0)
-	{
-		list[n] = 0;
-		return 0;
-	}
-	else if (n <= 2)
-	{
-		list[n] = 1;
-		return 1;
-	}
-	else
-	{
-		if (list[n - 1] != 0 && list[n - 2] != 0)
+		adjacencyList.resize(abs(size)); // 음수 값을 넣어도 괜찮도록 처리
+		
+		for (int i = 0; i < size; i++)
 		{
-			list[n] = list[n - 1] + list[n - 2];
-			return list[n];
-		}
-		else if (list[n - 2] != 0)
-		{
-			return fibonacci(n - 1, list) + list[n - 2];
-		}
-		else
-		{
-			return fibonacci(n - 1, list) + fibonacci(n - 2, list);
+			adjacencyList[i].push_back(65 + i);
 		}
 	}
-}
-
-int fibonacci(int n, int list[], bool check)
-{
-	if (n <= 0)
+	void insert(int i, int j)
 	{
-		return 0;
+		adjacencyList[i].push_back(j);
+		adjacencyList[j].push_back(i);
 	}
-	else if (n <= 2)
-	{
-		return 1;
-	}
-
-	if (list[n] != 0)
-	{
-		return list[n];
-	}
-
-	return list[n] = fibonacci(n - 1, list, true) + fibonacci(n - 2, list, true);
-}
+};
 
 int main()
 {
-#pragma region 동적 계획법(Dynamic Programing)
-	// 하나의 큰 문제를 여러 개의 작은 문제로 나누어서 그 결과를
-	// 저장하여 다시 큰 문제를 해결할 때 사용하는 알고리즘입니다.
+#pragma region 깊이 우선 탐색 (Depth First Search)
+	// 그래프에서 한 방향으로 갈 수 있을 만큼 깊이 들어갔다가, 더 이상
+	// 갈 수 없으면 다시 돌아와서 다른 경로를 탐색하는 방법입니다.
 
-	// 겹치는 부분 문제 (Overlapping Subproblems)
-	// 동일한 작은 문제들이 반복하여 나타나는 경우를 의미합니다.
+	// 자료형은 stack 사용 + 방문 체크용 벡터<bool> 생성
+	// 
 
-	// 최적 부분 구조 (Optimal Substructure)
-	// 부분 문제의 최적 결과 값을 사용하여 전체 문제의 최적의
-	// 결과를 낼 수 있는 경우를 의미합니다.
+	Graph graph(100);
 
-	// 메모이제이션 (Memoization)
-	// 프로글매이 동일한 계산을 반복해야할 때, 이전에 계산한 값을
-	// 메모리에 저장함으로써 동일한 계산을 반복 수행하는 작업을
-	// 제거하여 프로그램의 실행 속도를 향상시키는 방법입니다.
+	graph.insert('A', 'B');
+	graph.insert('A', 'C');
 
-	 int n = 45;
-	 int* list = new int[n + 1] {0};
+	graph.insert('B', 'D');
+	graph.insert('B', 'E');
 
-	 // cout << fibonacci(n, list) << endl;
+	graph.insert('C', 'F');
 
-	  for (int i = 1; i <= n; i++)
-	  {
-			cout << "Fibonacci Number[" << i << "] : " << fibonacci(i, list) << endl;
-	  }
+	graph.insert('F', 'G');
 
-	 delete[] list;
-
-	
 #pragma endregion
 
 	
