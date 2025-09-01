@@ -21,7 +21,7 @@ public:
 		adjacencyList[i].push_back(j);
 		adjacencyList[j].push_back(i);
 	}
-	void search(const T& start)
+	void sort(const T& start)
 	{
 		if (visited.find(start) == visited.end())
 		{
@@ -91,7 +91,7 @@ int main()
 
 	graph.insert('F', 'G');
 
-	graph.search('A');
+	graph.sort('A');
 	graph.print();
 
 	graph.search('A', true);
