@@ -1,32 +1,32 @@
 ﻿#include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
 #define INFINITY 10000000
 
-template<typename T>
 class Dijkstra
 {
 private:
-	vector<T> visited;	// 방문 체크용 행렬
+	vector <bool> visited;	// 방문 체크용 행렬
 	vector<int> distance; // 시작점에서부터 각 노드까지 가는데에 필요한 가중치 값
-	vector<vector<T>> adjacencyMatrix; // 인접행렬
+	vector<vector<int>> adjacencyMatrix; // 인접행렬
 	void resize(int node)
 	{
 		int newSize = node + 1;
 
 		if (adjacencyMatrix.size() < newSize)
 		{
-			int size = distance.size();
+			int size = adjacencyMatrix.size();
 
 			adjacencyMatrix.resize(newSize);
 			for (auto& element : adjacencyMatrix)
 			{
-				element.resize(newSize);
+				element.resize(newSize, INFINITY);
 			}
 
-			visited.resize(newSize);
+			visited.resize(newSize, false);
 			distance.resize(newSize, INFINITY); 
 			// resize 오버로드 함수로, 확장하는 인덱스만 뒤의 값으로 초기화시킴
 
@@ -36,14 +36,111 @@ private:
 			}
 		}
 	}
+	
 public:
-	void insert(const T& i, const T& j, int weight)
+	void insert(int i, int j, int weight)
 	{
 		i > j ? resize(i) : resize(j);
+		// resize(max(i, j));
 
 		adjacencyMatrix[i][j] = weight;
 		adjacencyMatrix[j][i] = weight;
+	}	
+#pragma region 내 거
+	const int& find()
+	{
+		int weightMin = INFINITY;
+		int minIndex = 0;
+
+		for (int i = 1; i < distance.size(); i++)
+		{
+			if (distance[i] == 0) continue;
+
+			if (weightMin > distance[i] && visited[i] == false)
+			{
+				weightMin = distance[i];
+				minIndex = i;
+			}
+		}
+
+		return minIndex;
 	}
+	void update(int start)
+	{
+		for (int i = 1; i < adjacencyMatrix[start].size(); i++)
+		{
+			distance[i] = adjacencyMatrix[start][i];
+		}
+
+		distance[1] = 0;
+
+		visited[start] = true;
+
+		// cout << find() << endl;
+	}
+	void find_path()
+	{
+		while (std::find(visited.begin() + 1, visited.end(), false) != visited.end())
+		{
+			int index = find();
+
+			if (index == 0)
+			{
+				update(1);
+			}
+			else
+			{
+				for (int i = 1; i < distance.size(); i++)
+				{
+					int newWeight = adjacencyMatrix[index][i] + adjacencyMatrix[index][index];
+
+					if (newWeight < distance[i] && visited[i] == false)
+					{
+						distance[i] = newWeight;
+					}
+				}
+
+				visited[index] = true;
+			}
+		}
+
+		for (int i = 1; i < distance.size(); i++)
+		{
+			cout << distance[i] << "  ";
+		}
+	}
+#pragma endregion
+
+#pragma region 선생님 것
+	const int& find(bool check)
+	{
+		int index = 0;
+		int min = INFINITY;
+
+		for (int i = 0; i < distance.size(); i++)
+		{
+			if (distance[i] < min && visited[i] == false)
+			{
+				min = distance[i];
+				index = i;
+			}
+		}
+
+		return index;
+	}
+	void update(int start, bool check)
+	{
+		for (int i = 0; i < distance.size(); i++)
+		{
+			distance[i] = adjacencyMatrix[start][i];
+		}
+
+		visited[start] = true;
+
+		cout << find(true) << endl;
+	}
+#pragma endregion
+
 };
 
 int main()
@@ -66,7 +163,7 @@ int main()
 	// 방문하지 않은 노드 중에서 가장 작은 거리를 가진 노드를 방문하고,
 	// 그 노드와 연결된 다른 노드까지의 거리를 계산합니다.
 
-	Dijkstra<int> dijkstra;
+	Dijkstra dijkstra;
 
 	dijkstra.insert(1, 2, 2);
 	dijkstra.insert(1, 3, 5);
@@ -83,6 +180,7 @@ int main()
 
 	dijkstra.insert(5, 6, 2);
 
+	dijkstra.find_path();
 
 #pragma endregion
 
